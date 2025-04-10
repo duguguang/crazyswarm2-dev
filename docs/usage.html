@@ -1,98 +1,38 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usage &mdash; Crazyswarm2 1.0a1 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+<html lang="cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2114bcc0"></script>
-      <script src="_static/doctools.js?v=888ff710"></script>
-      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
-    <script src="_static/js/theme.js"></script>
+    <title>Usage &#8212; FlightMaster2 1.0a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=59315e64"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="ROS 2 Tutorials" href="tutorials.html" />
-    <link rel="prev" title="Overview" href="overview.html" /> 
-</head>
+    <link rel="prev" title="Overview" href="overview.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  </head><body>
+  
 
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
           
-          
-          <a href="index.html" class="icon icon-home">
-            Crazyswarm2
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#crazyflies-yaml">crazyflies.yaml</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#positioning">Positioning</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#motion-capture">Motion capture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#onboard-positioning">Onboard positioning</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#simulation">Simulation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#physical-experiments">Physical Experiments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#teleoperation-controller">Teleoperation controller</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#python-scripts">Python scripts</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#swarm-management">Swarm Management</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">ROS 2 Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
-</ul>
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Crazyswarm2</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Usage</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+          <div class="body" role="main">
+            
   <section id="usage">
 <span id="id1"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h1>
 <div class="admonition warning">
@@ -126,8 +66,8 @@ In such case, each user should use a unique <a class="reference external" href="
 </ul>
 <section id="crazyflies-yaml">
 <h3>crazyflies.yaml<a class="headerlink" href="#crazyflies-yaml" title="Permalink to this heading"></a></h3>
-<p>Each crazyflie should have an unique URI which can <a class="reference external" href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/#firmware-configuration/">be changed in Bitcraze’s CFclient</a>.
-They can also be enabled in case you don’t want the server to connect with it.</p>
+<p>Each crazyflie should have an unique URI which can <a class="reference external" href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/#firmware-configuration/">be changed in Bitcraze's CFclient</a>.
+They can also be enabled in case you don't want the server to connect with it.</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">robots</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">cf231</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -167,7 +107,7 @@ They can also be enabled in case you don’t want the server to connect with it.
 <span class="w">            </span><span class="nt">voltage_critical</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.7</span><span class="w"> </span><span class="c1"># V</span>
 </pre></div>
 </div>
-<p>The yaml file also contain an ‘all’ field, in case you have parameters or logging that you want enabled for all the connected crazyflies.</p>
+<p>The yaml file also contain an 'all' field, in case you have parameters or logging that you want enabled for all the connected crazyflies.</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">all</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">firmware_logging</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
@@ -192,8 +132,8 @@ They can also be enabled in case you don’t want the server to connect with it.
 <p>The above also contains an example of the firmware_logging field, where default topics can be enabled or custom topics based on the <a class="reference external" href="https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/api/logs//">existing log toc of the crazyflie</a>.
 Moreover, it also contains the firmware_params field, where parameters can be set at startup.
 Also see the <a class="reference external" href="https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/api/params//">parameter list of the crazyflie</a> for that.</p>
-<p>Mind that you can also place the firmware_params and firmware_logging fields per crazyflie in ‘robots’  or the ‘robot_types’ field.
-The server node will upon initialization, first look at the params/logs from the individual crazyflie’s settings, then the robot_types, and then anything in ‘all’ which has lowest priority.</p>
+<p>Mind that you can also place the firmware_params and firmware_logging fields per crazyflie in 'robots'  or the 'robot_types' field.
+The server node will upon initialization, first look at the params/logs from the individual crazyflie's settings, then the robot_types, and then anything in 'all' which has lowest priority.</p>
 </section>
 </section>
 <section id="positioning">
@@ -209,8 +149,8 @@ This blogpost provides a good overview of the different positioning systems if y
 <span class="w">        </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;optitrackPC&quot;</span>
 </pre></div>
 </div>
-<p>‘Type’ can replaced by “optitrack”, “vicon”, “qualisys” or any of the other supported motion capture systems of the <a class="reference external" href="https://github.com/IMRCLab/motion_capture_tracking/tree/ros2/">motion capture tracking package</a>.
-‘hostname’ is the hostname of the computer running the motion capture software which can either be the PC name or the IP.</p>
+<p>'Type' can replaced by &quot;optitrack&quot;, &quot;vicon&quot;, &quot;qualisys&quot; or any of the other supported motion capture systems of the <a class="reference external" href="https://github.com/IMRCLab/motion_capture_tracking/tree/ros2/">motion capture tracking package</a>.
+'hostname' is the hostname of the computer running the motion capture software which can either be the PC name or the IP.</p>
 <p>Also make sure that in crazyflies.yaml, the motion_capture field is enabled for the specific robot type, or that the crazyflie is of a type that supports motion capture.</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">robot_types</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">cf21</span><span class="p">:</span>
@@ -226,9 +166,9 @@ This blogpost provides a good overview of the different positioning systems if y
 In this case you do not need to receive positioning from an external system like with MoCap.</p>
 <p>Instructions per positioning system:</p>
 <ul class="simple">
-<li><p>The <a class="reference external" href="https://www.bitcraze.io/documentation/system/positioning/loco-positioning-system/">Loco positioning system</a> - <a class="reference external" href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-loco-positioning-system/">Follow Bitcraze’s tutorial on LPS here</a>.</p></li>
-<li><p>The <a class="reference external" href="https://www.bitcraze.io/documentation/system/positioning/lighthouse/">Lighthouse positioning system</a> - <a class="reference external" href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse-positioning-system/">Follow Bitcraze’s tutorial on Lighthouse here</a>. Make sure to review the system management for saving and loading a system config, such that you don’t have to redo the basestation geometry estimation for each crazyflie.</p></li>
-<li><p>The <a class="reference external" href="https://www.bitcraze.io/products/flow-deck-v2/">Flow deck</a> -  <a class="reference external" href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-flow-deck/">Follow Bitcraze’s tutorial on the flowdeck here</a>. Note that the flow deck provides an relative positoing estimate and might conflict when you are flying with crazyswarm2 if you are flying with absolute coordinates instead of relative ones.</p></li>
+<li><p>The <a class="reference external" href="https://www.bitcraze.io/documentation/system/positioning/loco-positioning-system/">Loco positioning system</a> - <a class="reference external" href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-loco-positioning-system/">Follow Bitcraze's tutorial on LPS here</a>.</p></li>
+<li><p>The <a class="reference external" href="https://www.bitcraze.io/documentation/system/positioning/lighthouse/">Lighthouse positioning system</a> - <a class="reference external" href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse-positioning-system/">Follow Bitcraze's tutorial on Lighthouse here</a>. Make sure to review the system management for saving and loading a system config, such that you don't have to redo the basestation geometry estimation for each crazyflie.</p></li>
+<li><p>The <a class="reference external" href="https://www.bitcraze.io/products/flow-deck-v2/">Flow deck</a> -  <a class="reference external" href="https://www.bitcraze.io/documentation/tutorials/getting-started-with-flow-deck/">Follow Bitcraze's tutorial on the flowdeck here</a>. Note that the flow deck provides an relative positoing estimate and might conflict when you are flying with crazyswarm2 if you are flying with absolute coordinates instead of relative ones.</p></li>
 </ul>
 <p>Also in this case, make sure that motion_capture is disabled in the crazyflies.yaml file:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">robot_types</span><span class="p">:</span>
@@ -245,7 +185,7 @@ In this case you do not need to receive positioning from an external system like
 <span class="w">        </span><span class="nt">frequency</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"> </span><span class="c1"># Hz</span>
 </pre></div>
 </div>
-<p>Moreover, be aware that the motion capture node is enabled in the launch file by default, which can be turned off by adding ‘mocap:=False’ to the launch command.</p>
+<p>Moreover, be aware that the motion capture node is enabled in the launch file by default, which can be turned off by adding 'mocap:=False' to the launch command.</p>
 </section>
 </section>
 <section id="simulation">
@@ -296,34 +236,76 @@ In the future, we are planning to add support for rebooting and other actions.</
 </section>
 
 
-           </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="overview.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tutorials.html" class="btn btn-neutral float-right" title="ROS 2 Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021-2024, Wolfgang Hönig (TU Berlin), Kimberly McGuire (Bitcraze AB), and contributors.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+          
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FlightMaster2</a></h1>
 
-</body>
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">ROS 2 Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="overview.html" title="previous chapter">Overview</a></li>
+      <li>Next: <a href="tutorials.html" title="next chapter">ROS 2 Tutorials</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024-2025,  Nokov.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/usage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
 </html>

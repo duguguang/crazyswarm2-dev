@@ -61,9 +61,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Crazyswarm2'
-copyright = '2021-2024, Wolfgang Hönig (TU Berlin), Kimberly McGuire (Bitcraze AB), and contributors'
-author = 'Wolfgang Hönig, Kimberly McGuire'
+project = 'FlightMaster2'
+copyright = '2024-2025,  Nokov'
+author = 'duguguang'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -79,7 +79,7 @@ release = '1.0a1'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'en'
+language = 'cn'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -132,7 +132,8 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -246,7 +247,7 @@ html_theme = 'sphinx_rtd_theme'
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Crazyswarmdoc'
+htmlhelp_basename = 'FlightMasterdoc'
 
 # -- Options for Autodoc -------------------------------------------------
 
@@ -256,7 +257,7 @@ autodoc_member_order = 'bysource'
 
 # Do not try to import ROS modules so we can build on more machines easily.
 autodoc_mock_imports = [
-    'crazyswarm',
+ #   'crazyswarm',
     'numpy',
     'rospy',
     'std_msgs',

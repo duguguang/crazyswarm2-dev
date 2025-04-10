@@ -1,97 +1,38 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ROS 2 Tutorials &mdash; Crazyswarm2 1.0a1 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+<html lang="cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2114bcc0"></script>
-      <script src="_static/doctools.js?v=888ff710"></script>
-      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
-    <script src="_static/js/theme.js"></script>
+    <title>ROS 2 Tutorials &#8212; FlightMaster2 1.0a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=59315e64"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="How To" href="howto.html" />
-    <link rel="prev" title="Usage" href="usage.html" /> 
-</head>
+    <link rel="prev" title="Usage" href="usage.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  </head><body>
+  
 
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
           
-          
-          <a href="index.html" class="icon icon-home">
-            Crazyswarm2
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">ROS 2 Tutorials</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#teleoperation-keyboard">Teleoperation keyboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vizualization-with-rviz2">Vizualization with RVIZ2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mapping-with-simple-mapper">Mapping with simple mapper</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mapping-with-the-slam-toolbox">Mapping with the SLAM toolbox</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#preperation">Preperation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#connecting-with-the-crazyflie">Connecting with the Crazyflie</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#flying-and-mapping">Flying and mapping</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#connecting-with-nav2-bringup">Connecting with Nav2 Bringup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Preperation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#looking-at-the-launch-file">Looking at the Launch file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#navigate-the-crazyflie">Navigate the Crazyflie</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
-</ul>
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Crazyswarm2</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">ROS 2 Tutorials</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/tutorials.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+          <div class="body" role="main">
+            
   <section id="ros-2-tutorials">
 <span id="tutorials"></span><h1>ROS 2 Tutorials<a class="headerlink" href="#ros-2-tutorials" title="Permalink to this heading"></a></h1>
 <p>This page shows tutorials which connects the Crazyflie through Crazyswarm2 to with external packages like RVIZ2, teleop_twist_keyboard, SLAM toolbox and NAV2 bringup. Have fun!</p>
@@ -108,7 +49,7 @@ set the controller to 1 (PID).</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ros-DISTRO-teleop-twist-keyboard
 </pre></div>
 </div>
-<p>Then, first checkout keyboard_velmux_launch.py and make sure that the ‘robot_prefix’ of vel_mux matches your crazyflie ID in crazyfies.yaml (‘cf231’).</p>
+<p>Then, first checkout keyboard_velmux_launch.py and make sure that the 'robot_prefix' of vel_mux matches your crazyflie ID in crazyfies.yaml ('cf231').</p>
 <p>Then run the following launch file to start up the crazyflie server (CFlib):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>crazyflie_examples<span class="w"> </span>keyboard_velmux_launch.py
 </pre></div>
@@ -117,7 +58,7 @@ set the controller to 1 (PID).</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard
 </pre></div>
 </div>
-<p>Use ‘t’ to take off, and ‘b’ to land. For the rest, use the instructions of the telop package.</p>
+<p>Use 't' to take off, and 'b' to land. For the rest, use the instructions of the telop package.</p>
 </section>
 <section id="vizualization-with-rviz2">
 <h2>Vizualization with RVIZ2<a class="headerlink" href="#vizualization-with-rviz2" title="Permalink to this heading"></a></h2>
@@ -140,13 +81,13 @@ firmware_logging:
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rviz2
 </pre></div>
 </div>
-<p>Then set ‘fixed frame’ to ‘world’ and add the TF plugin. Then in ‘TF’, check the ‘show names’ checkbox.
+<p>Then set 'fixed frame' to 'world' and add the TF plugin. Then in 'TF', check the 'show names' checkbox.
 The crazyflie names should appear with their estimated position.</p>
 <p>This RVIZ2 visualization can be done for the default topics:</p>
 <ul class="simple">
-<li><p>‘pose’: ‘/cf231/pose/’ Transforms and Pose</p></li>
-<li><p>‘odom’: ‘/cf231/odom/’ Odometry</p></li>
-<li><p>‘scan’: ‘/cf231/scan’ Scan</p></li>
+<li><p>'pose': '/cf231/pose/' Transforms and Pose</p></li>
+<li><p>'odom': '/cf231/odom/' Odometry</p></li>
+<li><p>'scan': '/cf231/scan' Scan</p></li>
 </ul>
 <p>Here you can see an example of 5 crazyflies with the Pose default topic enabled, while taking off and landing</p>
 <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 20pt; height: 0; overflow: hidden; max-width: 100%; height: auto;">
@@ -197,7 +138,7 @@ With a <a class="reference external" href="https://www.bitcraze.io/products/flow
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ros-DISTRO-slam-toolbox
 </pre></div>
 </div>
-<p>Go to crazyflie/config/crazyflie.yaml, change the URI of the crazyflie to the one yours has and put the crazyflies you don’t use on ‘enabled: false’:</p>
+<p>Go to crazyflie/config/crazyflie.yaml, change the URI of the crazyflie to the one yours has and put the crazyflies you don't use on 'enabled: false':</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cf231:
 <span class="w">  </span>enabled:<span class="w"> </span><span class="nb">true</span>
 <span class="w">  </span>uri:<span class="w"> </span>radio://0/20/2M/E7E7E7E701
@@ -223,7 +164,7 @@ With a <a class="reference external" href="https://www.bitcraze.io/products/flow
 </section>
 <section id="connecting-with-the-crazyflie">
 <h3>Connecting with the Crazyflie<a class="headerlink" href="#connecting-with-the-crazyflie" title="Permalink to this heading"></a></h3>
-<p>Let’s first look at the launch file real quick (multiranger_mapping_launch.py):</p>
+<p>Let's first look at the launch file real quick (multiranger_mapping_launch.py):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">return</span><span class="w"> </span>LaunchDescription<span class="o">([</span>
 <span class="w">    </span>IncludeLaunchDescription<span class="o">(</span>
 <span class="w">    </span>PythonLaunchDescriptionSource<span class="o">([</span>os.path.join<span class="o">(</span>
@@ -258,11 +199,11 @@ With a <a class="reference external" href="https://www.bitcraze.io/products/flow
 <p>Here is an explanation of the nodes:</p>
 <ul class="simple">
 <li><p>The first node enables the crazyflie server, namely the python version (cflib) as that currently has logging enabled. This takes the crazyflies.yaml file you just edited and uses those values to set up the crazyflie. You might need to change some topic strings based on your Crazyflie name (<cite>/cf231</cite> to something else)</p></li>
-<li><p>The second node is a velocity command handler, which takes an incoming twist message, makes the Crazyflie take off to a fixed height and enables velocity control of external packages (you’ll see why soon enough).</p></li>
+<li><p>The second node is a velocity command handler, which takes an incoming twist message, makes the Crazyflie take off to a fixed height and enables velocity control of external packages (you'll see why soon enough).</p></li>
 <li><p>The third node is the slam toolbox node. You noted that we gave it some different parameters, which can be found in the crazyflie_examples/config/slam_params.yaml. Here we upped the speed of the map generation, decreased the resolution and turn of ray matching as mentioned in the warning above.</p></li>
 </ul>
 <p>Turn on your crazyflie and put it in the middle of the room you would like to map. Make sure to mark the starting position for later.</p>
-<p>Now startup the crazyflie server with the following example launch file, after sourcing the ‘setup.bash’ of course:</p>
+<p>Now startup the crazyflie server with the following example launch file, after sourcing the 'setup.bash' of course:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>install/setup.bash
 ros2<span class="w"> </span>launch<span class="w"> </span>crazyflie_examples<span class="w"> </span>multiranger_mapping_launch.py
 </pre></div>
@@ -298,10 +239,10 @@ rviz2
 </div>
 <p>Add the following displays and panels to RVIZ:</p>
 <ul class="simple">
-<li><p>Changed the ‘Fixed frame’ to ‘map’</p></li>
-<li><p>‘Add’ button under displays and ‘by topic’ tab, select the ‘/map’ topic.</p></li>
-<li><p>‘Add’ button under displays and ‘by display type’ add a transform.</p></li>
-<li><p>‘Panels’ on the top menu, select ‘add new panel’ and select the SLAMToolBoxPlugin</p></li>
+<li><p>Changed the 'Fixed frame' to 'map'</p></li>
+<li><p>'Add' button under displays and 'by topic' tab, select the '/map' topic.</p></li>
+<li><p>'Add' button under displays and 'by display type' add a transform.</p></li>
+<li><p>'Panels' on the top menu, select 'add new panel' and select the SLAMToolBoxPlugin</p></li>
 </ul>
 <p>It should look like something like this:</p>
 <img alt="_images/slam_rviz2.jpg" src="_images/slam_rviz2.jpg" />
@@ -313,14 +254,14 @@ rviz2
 ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard
 </pre></div>
 </div>
-<p>and make the crazyflie take off with the ‘t’ key on your keyboard. Now fly around the room to make a map of it.</p>
+<p>and make the crazyflie take off with the 't' key on your keyboard. Now fly around the room to make a map of it.</p>
 <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 20pt; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/-NfKnlJMAHQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Tip: start with turning slowly with yaw, which should be enough to get most of the room.</p>
 </div>
-<p>Once you are happy, you can save the map with ‘Save Map’ in the SLAM toolbox panel, and land the crazyflie with ‘t’ with teleop_twist_keyboard.</p>
+<p>Once you are happy, you can save the map with 'Save Map' in the SLAM toolbox panel, and land the crazyflie with 't' with teleop_twist_keyboard.</p>
 <p>If not, you could tweak with the parameters of  the <a class="reference external" href="https://github.com/SteveMacenski/slam_toolbox/">SLAM toolbox</a> to get a better result.</p>
 </section>
 </section>
@@ -334,7 +275,7 @@ ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<spa
 <p>This tutorial assume you have taken the above mapping tutorial first.</p>
 </div>
 <p>Find the all the files that were created by the RVIZ2 slam toolbox plugin, which should be in format *.yaml, *.posegraph, *.data and *.pgm, and copy them in the /crazyflie_examples/data/ folder.
-Either you can replace those that are there already (‘map.*’), or call them different and just change the name in the launch file, which will be explain now.</p>
+Either you can replace those that are there already ('map.*'), or call them different and just change the name in the launch file, which will be explain now.</p>
 <p>Next, install the Navigation2 Bringup package:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ros-DISTRO-nav2-bringup
 </pre></div>
@@ -342,7 +283,7 @@ Either you can replace those that are there already (‘map.*’), or call them 
 </section>
 <section id="looking-at-the-launch-file">
 <h3>Looking at the Launch file<a class="headerlink" href="#looking-at-the-launch-file" title="Permalink to this heading"></a></h3>
-<p>Let’s take a look at the launch file (multiranger_nav3_launch.py):</p>
+<p>Let's take a look at the launch file (multiranger_nav3_launch.py):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">map_name</span> <span class="o">=</span> <span class="s1">&#39;map&#39;</span>
 
 <span class="k">return</span> <span class="n">LaunchDescription</span><span class="p">([</span>
@@ -398,13 +339,13 @@ Either you can replace those that are there already (‘map.*’), or call them 
 </div>
 <p>The crazyflie_server, vel_mux and slam toolbox nodes are obviously the same as the mapping launch file example, with some key differences:</p>
 <ul class="simple">
-<li><p>crazyflie_server: An extra parameter called ‘world_tf_name’ which changes the name of the ‘world’ transform to ‘map’. This is to ensure compatibilty with the NAV2 bringup node later.</p></li>
-<li><p>slam toolbox:  ‘map_frame’ set to ‘map, ‘mode’ set to localization with a ‘map_file_name’ and ‘map_start_pose’ (now remember marking the start position of the mapping tutorial?)</p></li>
+<li><p>crazyflie_server: An extra parameter called 'world_tf_name' which changes the name of the 'world' transform to 'map'. This is to ensure compatibilty with the NAV2 bringup node later.</p></li>
+<li><p>slam toolbox:  'map_frame' set to 'map, 'mode' set to localization with a 'map_file_name' and 'map_start_pose' (now remember marking the start position of the mapping tutorial?)</p></li>
 </ul>
 <p>The next two nodes are new, which are included IncludeLaunchDescription to include other launch files (since these are pretty big).</p>
 <ul class="simple">
-<li><p>Navigation Bringup: ‘slam’ is set to false since that is already enabled, ‘map’ includes the yaml file of what was created in the previous mapping tutorial. ‘params_file’ contains all the parameters that have been altered a bit for the crazyflie.</p></li>
-<li><p>RVIZ2: ‘rviz_config’ is set to a default rviz2 file of Nav2 that saves us the trouble of setting everything up by hand.</p></li>
+<li><p>Navigation Bringup: 'slam' is set to false since that is already enabled, 'map' includes the yaml file of what was created in the previous mapping tutorial. 'params_file' contains all the parameters that have been altered a bit for the crazyflie.</p></li>
+<li><p>RVIZ2: 'rviz_config' is set to a default rviz2 file of Nav2 that saves us the trouble of setting everything up by hand.</p></li>
 </ul>
 </section>
 <section id="navigate-the-crazyflie">
@@ -415,13 +356,13 @@ ros2<span class="w"> </span>launch<span class="w"> </span>crazyflie_examples<spa
 </pre></div>
 </div>
 <p>We will not now show all the print-outs, just make sure that at the crazyflie is connected and it outputs the right transforms and topics like in the mapping tutorial</p>
-<p>Now, open another terminal and open up a teleop_twist_keyboard just like last time. Press ‘t’ on your keyboard to make the crazyflie fly.</p>
-<p>On top of the RVIZ2 window, you see the button ‘Nav2 goal’. Click at in a free spot in the map and watch the crazyflie go places :).</p>
+<p>Now, open another terminal and open up a teleop_twist_keyboard just like last time. Press 't' on your keyboard to make the crazyflie fly.</p>
+<p>On top of the RVIZ2 window, you see the button 'Nav2 goal'. Click at in a free spot in the map and watch the crazyflie go places :).</p>
 <p>Also try it out by putting obstacles along the path of the crazyflie like in the video here.</p>
 <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 20pt; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/1BKLPkQ6Gz8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div><p>As you noticed, the movement around the obstacles are pretty conservative. You can tune the values in /config/nav2_params.yaml, like the global or local planner’s inflation_layer or the size of the robot.
-Please check out  <a class="reference external" href="https://navigation.ros.org/tuning/index.html/">NAV2’s tuning documentation</a> for more explanation of these values.</p>
+</div><p>As you noticed, the movement around the obstacles are pretty conservative. You can tune the values in /config/nav2_params.yaml, like the global or local planner's inflation_layer or the size of the robot.
+Please check out  <a class="reference external" href="https://navigation.ros.org/tuning/index.html/">NAV2's tuning documentation</a> for more explanation of these values.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Final note. The SLAM performance and navigation performance of the Crazyflie with the multiranger is doable but not perfect. We absolutely encourage you to tweak and tune the parameters to get something better! (And if you do, please share :D)</p>
@@ -431,34 +372,76 @@ Please check out  <a class="reference external" href="https://navigation.ros.org
 </section>
 
 
-           </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="howto.html" class="btn btn-neutral float-right" title="How To" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021-2024, Wolfgang Hönig (TU Berlin), Kimberly McGuire (Bitcraze AB), and contributors.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+          
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FlightMaster2</a></h1>
 
-</body>
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ROS 2 Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="usage.html" title="previous chapter">Usage</a></li>
+      <li>Next: <a href="howto.html" title="next chapter">How To</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024-2025,  Nokov.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/tutorials.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
 </html>
